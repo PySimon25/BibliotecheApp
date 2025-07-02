@@ -45,4 +45,4 @@ def handle_exception(e):
 
 # Rimuovere debug=True in produzione
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()
