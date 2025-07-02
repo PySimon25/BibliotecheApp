@@ -11,9 +11,25 @@ def get_categories():
     return jsonify(categories)
 
 
-@categories_bp.route('/categories/<int:id>', methods=['GET'])
+@categories_bp.route('/category/<int:id>', methods=['GET'])
 def categories_by_route_id(id):
     category = categories_repo().get_category_by_id(id)
     if not category:
         return jsonify(error="Category not found"), 404
     return jsonify(category)
+
+@categories_bp.route('/category', methods=['POST'])
+def create_category():
+    data = request.get_json()
+    nome_categoria = data.get('nome_categoria')
+    if not nome_categoria:
+        return jsonify(error="Missing parameter nome_categoria"), 400
+    nome_categoria = nome_categoria.strip()
+    if categories_repo().get_category_by_name(nome_categoria):
+        return jsonify(error=f"{nome_categoria} already exists"), 400
+    category_id = categories_repo().create_category(nome_categoria)
+    response = {
+        'id_categoria': category_id,
+        'message': 'OK'
+    }
+    return jsonify(response)
