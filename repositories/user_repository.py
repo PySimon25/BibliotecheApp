@@ -26,7 +26,6 @@ class UserRepository:
             user = cursor.fetchone()
             if user is not None:
                 user['prestiti'] = self.lendings_repo.get_lendings_by_user_id(id_utente)
-                print(user)
             return user
 
     def get_user_by_email(self, email):
