@@ -10,6 +10,20 @@ def get_users():
     users = users_repo().get_all_users()
     return jsonify(users)
 
+@users_bp.route('/user/<int:id>', methods=['GET'])
+def get_user_by_id(id):
+    user = users_repo().get_user_by_id(id)
+    if not user:
+        return jsonify(error="User not found"), 404
+    return jsonify(user)
+
+@users_bp.route('/user/<int:id>/details', methods=['GET'])
+def get_user_by_id_with_details(id):
+    user = users_repo().get_user_by_id_with_details(id)
+    if not user:
+        return jsonify(error="User not found"), 404
+    return jsonify(user)
+
 @users_bp.route('/users/search', methods=['GET'])
 def get_user_by_email():
     email = request.args.get('email')
