@@ -10,9 +10,8 @@ def get_categories():
     categories = categories_repo().get_all_categories()
     return jsonify(categories)
 
-
 @categories_bp.route('/category/<int:id>', methods=['GET'])
-def categories_by_route_id(id):
+def categories_by_id(id):
     category = categories_repo().get_category_by_id(id)
     if not category:
         return jsonify(error="Category not found"), 404

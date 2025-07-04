@@ -43,6 +43,5 @@ def handle_exception(e):
     app.logger.exception("Errore non gestito")
     return make_response(jsonify(error="Errore interno del server"), 500)
 
-# Rimuovere debug=True in produzione
 if __name__ == '__main__':
     app.run()
