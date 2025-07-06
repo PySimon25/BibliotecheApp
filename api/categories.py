@@ -10,9 +10,21 @@ def get_categories():
     categories = categories_repo().get_all_categories()
     return jsonify(categories)
 
+@categories_bp.route('/categories/details', methods=['GET'])
+def get_categories_with_details():
+    categories = categories_repo().get_all_categories_with_details()
+    return jsonify(categories)
+
 @categories_bp.route('/category/<int:id>', methods=['GET'])
-def categories_by_id(id):
+def category_by_id(id):
     category = categories_repo().get_category_by_id(id)
+    if not category:
+        return jsonify(error="Category not found"), 404
+    return jsonify(category)
+
+@categories_bp.route('/category/<int:id>/details', methods=['GET'])
+def category_by_id_with_details(id):
+    category = categories_repo().category_by_id_with_details(id)
     if not category:
         return jsonify(error="Category not found"), 404
     return jsonify(category)
