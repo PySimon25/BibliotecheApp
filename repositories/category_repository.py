@@ -4,17 +4,10 @@ class CategoryRepository:
 
     def get_all_categories(self):
         with self.db.cursor(dictionary=True) as cursor:
-            query = "SELECT id_categoria, nome_categoria FROM Categorie ORDER BY nome_categoria"
-            cursor.execute(query)
-            categories = cursor.fetchall()
-            return categories
-        
-    def get_all_categories_with_details(self):
-        with self.db.cursor(dictionary=True) as cursor:
-            query = "SELECT c.id_categoria, c.nome_categoria, COUNT(*) AS numero_libri \
+            query = "SELECT c.id_categoria, c.nome_categoria, COUNT(l.id_libro) AS numero_libri \
                 FROM Categorie c \
-                LEFT JOIN Libri l on c.id_categoria = l.id_categoria \
-                GROUP BY c.id_categoria \
+                LEFT JOIN Libri l on l.id_categoria = c.id_categoria \
+                GROUP BY c.id_categoria, c.nome_categoria \
                 ORDER BY c.nome_categoria"
             cursor.execute(query)
             categories = cursor.fetchall()
@@ -22,8 +15,12 @@ class CategoryRepository:
     
     def get_category_by_id(self, id_categoria):
         with self.db.cursor(dictionary=True) as cursor:
-            query = "SELECT id_categoria, nome_categoria FROM Categorie WHERE id_categoria = %s"
-            cursor.execute(query, (id_categoria,)) # la virgola dopo id_categoria serve a rendere i parametri una tupla
+            query = "SELECT c.id_categoria, c.nome_categoria, count(l.id_libro) as numero_libri \
+                FROM Categorie c \
+                LEFT JOIN Libri l on l.id_categoria = c.id_categoria \
+                WHERE c.id_categoria = %s \
+                GROUP BY c.id_categoria, c.nome_categoria"
+            cursor.execute(query, (id_categoria,))
             category = cursor.fetchone()
             return category
         
@@ -74,3 +71,19 @@ class CategoryRepository:
             self.db.commit()
             new_id = cursor.lastrowid
             return new_id
+
+    def update_category(self, nome_categoria, id_categoria):
+        with self.db.cursor() as cursor:
+            query = "UPDATE Categorie SET nome_categoria = %s where id_categoria = %s"
+            cursor.execute(query, (nome_categoria, id_categoria))
+            self.db.commit()
+            rowcount = cursor.rowcount
+            return rowcount
+        
+    def delete_category_by_id(self, id_categoria):
+        with self.db.cursor() as cursor:
+            query = "DELETE from Categorie where id_categoria = %s"
+            cursor.execute(query, (id_categoria,))
+            self.db.commit()
+            rowcount = cursor.rowcount
+            return rowcount

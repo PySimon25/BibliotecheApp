@@ -31,18 +31,16 @@ flask run
 
 ## Endpoint
 
-Per chiamare la webapi aprire il browser
-
 - [Elenco categorie](http://localhost:5000/api/categories)
-- [Elenco categorie con dettaglio](http://localhost:5000/api/categories/details)
 - [Categoria singola](http://localhost:5000/api/category/1)
 - [Categoria singola con dettaglio](http://localhost:5000/api/category/1/details)
 - [Elenco utenti](http://localhost:5000/api/users)
 - [Ricerca utente per email](http://localhost:5000/api/users/search?email=francesca14@hotmail.com)
 
-Richiede client in grado di effettuare chiamate REST es. Postman
+Richiede un client in grado di effettuare chiamate REST es. Postman
 
 - [Creazione categoria (POST)](http://localhost:5000/api/category)
+- [Cancellazione Categoria (DELETE)](http://localhost:5000/api/category/1)
 
 ## Riferimenti
 
