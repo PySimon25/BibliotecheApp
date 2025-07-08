@@ -2,13 +2,13 @@ from flask import Flask, jsonify, make_response, g
 from werkzeug.exceptions import HTTPException
 import mysql.connector
 import os
-from api.hello import hello_bp
+from api.login import login_bp
 from api.users import users_bp
 from api.categories import categories_bp
 
 app = Flask(__name__)
 # Registra i gestori che gestiranno le chiamate all'api
-app.register_blueprint(hello_bp, url_prefix="/api")
+app.register_blueprint(login_bp, url_prefix="/api")
 app.register_blueprint(users_bp, url_prefix="/api")
 app.register_blueprint(categories_bp, url_prefix="/api")
 

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 172.18.0.3:3306
--- Creato il: Giu 30, 2025 alle 09:55
+-- Creato il: Lug 08, 2025 alle 00:02
 -- Versione del server: 11.8.2-MariaDB-ubu2404
 -- Versione PHP: 8.2.28
 
@@ -41,26 +41,26 @@ CREATE TABLE `Bibliotecari` (
 --
 
 INSERT INTO `Bibliotecari` (`id_bibliotecario`, `id_biblioteca`, `nome`, `cognome`, `email`, `password`) VALUES
-(1, 1, 'Rossana', 'Bosurgi', 'gabriele84@marcacci.it', NULL),
-(2, 2, 'Eva', 'Disdero', 'faustomoresi@basadonna.it', NULL),
-(3, 3, 'Giustino', 'Fracci', 'fbaglioni@verga.net', NULL),
-(4, 4, 'Olga', 'Pisani', 'rodolfo10@rosselli.it', NULL),
-(5, 5, 'Ronaldo', 'Fischetti', 'clelia25@meucci.eu', NULL),
-(6, 6, 'Uberto', 'Zampa', 'meuccigioacchino@castellitto-interminei.net', NULL),
-(7, 7, 'Elmo', 'Cagnin', 'maccanellioreste@prodi.it', NULL),
-(8, 8, 'Licia', 'Mazzeo', 'marianacuomo@tosto-schiavone.org', NULL),
-(9, 9, 'Stefano', 'Ariasso', 'persicotoni@giusti-gabrieli.com', NULL),
-(10, 10, 'Armando', 'Lombardi', 'ssegre@alfonsi.org', NULL),
-(11, 1, 'Laura', 'Rossi', 'laura.rossi@biblioteca.it', NULL),
-(12, 2, 'Marco', 'Bianchi', 'marco.bianchi@biblioteca.it', NULL),
-(13, 6, 'Chiara', 'Verdi', 'chiara.verdi@biblioteca.it', NULL),
-(14, 3, 'Giovanni', 'Neri', 'giovanni.neri@biblioteca.it', NULL),
-(15, 2, 'Elisa', 'Conti', 'elisa.conti@biblioteca.it', NULL),
-(16, 7, 'Luca', 'Gallo', 'luca.gallo@biblioteca.it', NULL),
-(17, 4, 'Marta', 'Colombo', 'marta.colombo@biblioteca.it', NULL),
-(18, 8, 'Davide', 'Romano', 'davide.romano@biblioteca.it', NULL),
-(19, 9, 'Silvia', 'De Luca', 'silvia.deluca@biblioteca.it', NULL),
-(20, 1, 'Federico', 'Serra', 'federico.serra@biblioteca.it', NULL);
+(1, 1, 'Rossana', 'Bosurgi', 'gabriele84@marcacci.it', '$2b$14$OSAj03iJUX8xDZ/j9vBtee3vAeveT/N4L6lkBVCQ5F9GiGde/4MTm'),
+(2, 2, 'Eva', 'Disdero', 'faustomoresi@basadonna.it', '$2b$14$OSAj03iJUX8xDZ/j9vBtee3vAeveT/N4L6lkBVCQ5F9GiGde/4MTm'),
+(3, 3, 'Giustino', 'Fracci', 'fbaglioni@verga.net', '$2b$14$OSAj03iJUX8xDZ/j9vBtee3vAeveT/N4L6lkBVCQ5F9GiGde/4MTm'),
+(4, 4, 'Olga', 'Pisani', 'rodolfo10@rosselli.it', '$2b$14$OSAj03iJUX8xDZ/j9vBtee3vAeveT/N4L6lkBVCQ5F9GiGde/4MTm'),
+(5, 5, 'Ronaldo', 'Fischetti', 'clelia25@meucci.eu', '$2b$14$OSAj03iJUX8xDZ/j9vBtee3vAeveT/N4L6lkBVCQ5F9GiGde/4MTm'),
+(6, 6, 'Uberto', 'Zampa', 'meuccigioacchino@castellitto-interminei.net', '$2b$14$OSAj03iJUX8xDZ/j9vBtee3vAeveT/N4L6lkBVCQ5F9GiGde/4MTm'),
+(7, 7, 'Elmo', 'Cagnin', 'maccanellioreste@prodi.it', '$2b$14$OSAj03iJUX8xDZ/j9vBtee3vAeveT/N4L6lkBVCQ5F9GiGde/4MTm'),
+(8, 8, 'Licia', 'Mazzeo', 'marianacuomo@tosto-schiavone.org', '$2b$14$OSAj03iJUX8xDZ/j9vBtee3vAeveT/N4L6lkBVCQ5F9GiGde/4MTm'),
+(9, 9, 'Stefano', 'Ariasso', 'persicotoni@giusti-gabrieli.com', '$2b$14$OSAj03iJUX8xDZ/j9vBtee3vAeveT/N4L6lkBVCQ5F9GiGde/4MTm'),
+(10, 10, 'Armando', 'Lombardi', 'ssegre@alfonsi.org', '$2b$14$OSAj03iJUX8xDZ/j9vBtee3vAeveT/N4L6lkBVCQ5F9GiGde/4MTm'),
+(11, 1, 'Laura', 'Rossi', 'laura.rossi@biblioteca.it', '$2b$14$OSAj03iJUX8xDZ/j9vBtee3vAeveT/N4L6lkBVCQ5F9GiGde/4MTm'),
+(12, 2, 'Marco', 'Bianchi', 'marco.bianchi@biblioteca.it', '$2b$14$OSAj03iJUX8xDZ/j9vBtee3vAeveT/N4L6lkBVCQ5F9GiGde/4MTm'),
+(13, 6, 'Chiara', 'Verdi', 'chiara.verdi@biblioteca.it', '$2b$14$OSAj03iJUX8xDZ/j9vBtee3vAeveT/N4L6lkBVCQ5F9GiGde/4MTm'),
+(14, 3, 'Giovanni', 'Neri', 'giovanni.neri@biblioteca.it', '$2b$14$OSAj03iJUX8xDZ/j9vBtee3vAeveT/N4L6lkBVCQ5F9GiGde/4MTm'),
+(15, 2, 'Elisa', 'Conti', 'elisa.conti@biblioteca.it', '$2b$14$OSAj03iJUX8xDZ/j9vBtee3vAeveT/N4L6lkBVCQ5F9GiGde/4MTm'),
+(16, 7, 'Luca', 'Gallo', 'luca.gallo@biblioteca.it', '$2b$14$OSAj03iJUX8xDZ/j9vBtee3vAeveT/N4L6lkBVCQ5F9GiGde/4MTm'),
+(17, 4, 'Marta', 'Colombo', 'marta.colombo@biblioteca.it', '$2b$14$OSAj03iJUX8xDZ/j9vBtee3vAeveT/N4L6lkBVCQ5F9GiGde/4MTm'),
+(18, 8, 'Davide', 'Romano', 'davide.romano@biblioteca.it', '$2b$14$OSAj03iJUX8xDZ/j9vBtee3vAeveT/N4L6lkBVCQ5F9GiGde/4MTm'),
+(19, 9, 'Silvia', 'De Luca', 'silvia.deluca@biblioteca.it', '$2b$14$OSAj03iJUX8xDZ/j9vBtee3vAeveT/N4L6lkBVCQ5F9GiGde/4MTm'),
+(20, 1, 'Federico', 'Serra', 'federico.serra@biblioteca.it', '$2b$14$OSAj03iJUX8xDZ/j9vBtee3vAeveT/N4L6lkBVCQ5F9GiGde/4MTm');
 
 -- --------------------------------------------------------
 
@@ -112,7 +112,8 @@ INSERT INTO `Categorie` (`id_categoria`, `nome_categoria`) VALUES
 (3, 'Fantascienza'),
 (4, 'Biografia'),
 (5, 'Storia'),
-(6, 'Fantasy');
+(6, 'Fantasy'),
+(7, 'Avventura');
 
 -- --------------------------------------------------------
 
@@ -344,56 +345,100 @@ CREATE TABLE `Utenti` (
 --
 
 INSERT INTO `Utenti` (`id_utente`, `nome`, `cognome`, `email`, `password`, `telefono`) VALUES
-(1, 'Eugenia', 'Caracciolo', 'gioele32@camicione.com', NULL, '+39 133 89 08 3'),
-(2, 'Ricciotti', 'Lettiere', 'ilariaraimondi@lettiere-cremonesi.eu', NULL, '+39 161 55 94 0'),
-(3, 'Nicolò', 'Bosurgi', 'aurora31@libero.it', NULL, '+39 3413 164752'),
-(4, 'Michelangelo', 'Foscari', 'doninivittorio@tiscali.it', NULL, '+39 76 4835030'),
-(5, 'Olga', 'Mennea', 'baccio39@poste.it', NULL, '+39 76 7242388'),
-(6, 'Giuseppe', 'Renzi', 'giancarlo28@live.com', NULL, '+39 012 26 91 6'),
-(7, 'Vincenzo', 'Gregorio', 'valierluisa@morpurgo-caracciolo.it', NULL, '+39 70 4828148'),
-(8, 'Concetta', 'Filangieri', 'mariana28@abate.com', NULL, '+39 43 03911718'),
-(9, 'Marisa', 'Cavanna', 'kvianello@tron-ramazzotti.it', NULL, '+39 3465 787133'),
-(10, 'Alessandro', 'Visintini', 'adrianobondumier@biagiotti.eu', NULL, '+39 834 73 82 9'),
-(11, 'Mercedes', 'Serraglio', 'cesarecagnin@gmail.com', NULL, '+39 66 70106513'),
-(12, 'Fredo', 'Favata', 'piersantifalcone@fastwebnet.it', NULL, '+39 317 8108013'),
-(13, 'Fabio', 'Pisano', 'zfuseli@libero.it', NULL, '+39 60 6474687'),
-(14, 'Ermanno', 'Faugno', 'arturoveneziano@libero.it', NULL, '+39 5009 788208'),
-(15, 'Serafina', 'Fantoni', 'gibiliscopatrizio@gozzi.it', NULL, '+39 699 85 43 5'),
-(16, 'Donatello', 'Mantegazza', 'luisa10@outlook.com', NULL, '+39 911 8384251'),
-(17, 'Napoleone', 'Lucarelli', 'tvento@trupiano-alfonsi.com', NULL, '+39 41 1824493'),
-(18, 'Letizia', 'Mozart', 'toni74@cabibbo.org', NULL, '+39 052 42 78 6'),
-(19, 'Benvenuto', 'Contarini', 'berenice82@ceravolo-bassi.eu', NULL, '+39 0533 158692'),
-(20, 'Nicoletta', 'Eco', 'erraniloredana@poste.it', NULL, '+39 6342 160733'),
-(21, 'Liberto', 'Gentilini', 'ferragnipasqual@ligorio-bonanno.eu', NULL, '+39 8685 014294'),
-(22, 'Corrado', 'Rizzo', 'raffaello98@tim.it', NULL, '+39 934 0608835'),
-(23, 'Puccio', 'Bonatti', 'francesca14@hotmail.com', NULL, '+39 65 64823662'),
-(24, 'Dina', 'Manunta', 'marenzioivan@virgilio.it', NULL, '+39 995 7773872'),
-(25, 'Flora', 'Brenna', 'carmelo34@tiscali.it', NULL, '+39 3200 379176'),
-(26, 'Letizia', 'Pastine', 'jgori@libero.it', NULL, '+39 1632 870831'),
-(27, 'Nina', 'Scarpa', 'btiepolo@hotmail.it', NULL, '+39 277 4348734'),
-(28, 'Ranieri', 'Borzomì', 'guarinomorabito@poste.it', NULL, '+39 122 3623166'),
-(29, 'Alessandra', 'Schiaparelli', 'foconiroberta@gmail.com', NULL, '+39 909 6705466'),
-(30, 'Adele', 'Vergassola', 'rgalilei@spanevello-badoer.eu', NULL, '+39 6272 980699'),
-(31, 'Bruno', 'Renzi', 'dfaggiani@parini-monaco.it', NULL, '+39 56 46417080'),
-(32, 'Maurizio', 'Garzoni', 'bajamontigioffre@aporti.net', NULL, '+39 71 9374529'),
-(33, 'Clelia', 'Carocci', 'corrado90@panicucci-petrucci.com', NULL, '+39 314 9190586'),
-(34, 'Bartolomeo', 'Tognazzi', 'pugliesepriscilla@live.com', NULL, '+39 657 26 28 4'),
-(35, 'Rosario', 'Roccabonella', 'serena31@fastwebnet.it', NULL, '+39 379 9650752'),
-(36, 'Sergius', 'Franzese', 'massimiliano49@fastwebnet.it', NULL, '+39 083 1367837'),
-(37, 'Ricciotti', 'Antonelli', 'gianfrancesco63@pacillo-sforza.it', NULL, '+39 8557 444313'),
-(38, 'Dante', 'Valentino', 'giampierosorrentino@trezzini-longhena.net', NULL, '+39 35 24082400'),
-(39, 'Angelica', 'Maggioli', 'acamilleri@lovato.eu', NULL, '+39 04 7116719'),
-(40, 'Elisa', 'Bernetti', 'paolazanichelli@bresciani-grassi.it', NULL, '+39 6999 386774'),
-(41, 'Liberto', 'Bignami', 'elenafranceschi@bova-crispi.com', NULL, '+39 120 6797403'),
-(42, 'Isa', 'Longhena', 'giannottigiustino@yahoo.com', NULL, '+39 3618 324210'),
-(43, 'Morena', 'Martucci', 'dcatenazzi@vodafone.it', NULL, '+39 6488 771906'),
-(44, 'Claudia', 'Greggio', 'germanogianna@argan.it', NULL, '+39 742 9671756'),
-(45, 'Ludovico', 'Campano', 'piergiorgio74@piccio.com', NULL, '+39 45 16808760'),
-(46, 'Francesco', 'Travaglia', 'wroth@libero.it', NULL, '+39 48 2477109'),
-(47, 'Nicoletta', 'Giradello', 'amanda08@caboto-gasperi.it', NULL, '+39 274 84 67 7'),
-(48, 'Ennio', 'Passalacqua', 'stefanibonanno@pozzecco-morpurgo.com', NULL, '+39 49 97278755'),
-(49, 'Amanda', 'Vento', 'mmilanesi@tiscali.it', NULL, '+39 636 0576627'),
-(50, 'Dino', 'Tebaldi', 'rosselliniciro@hotmail.com', NULL, '+39 026 2174596');
+(1, 'Eugenia', 'Caracciolo', 'gioele32@camicione.com', '$2b$14$OSAj03iJUX8xDZ/j9vBtee3vAeveT/N4L6lkBVCQ5F9GiGde/4MTm', '+39 133 89 08 3'),
+(2, 'Ricciotti', 'Lettiere', 'ilariaraimondi@lettiere-cremonesi.eu', '$2b$14$OSAj03iJUX8xDZ/j9vBtee3vAeveT/N4L6lkBVCQ5F9GiGde/4MTm', '+39 161 55 94 0'),
+(3, 'Nicolò', 'Bosurgi', 'aurora31@libero.it', '$2b$14$OSAj03iJUX8xDZ/j9vBtee3vAeveT/N4L6lkBVCQ5F9GiGde/4MTm', '+39 3413 164752'),
+(4, 'Michelangelo', 'Foscari', 'doninivittorio@tiscali.it', '$2b$14$OSAj03iJUX8xDZ/j9vBtee3vAeveT/N4L6lkBVCQ5F9GiGde/4MTm', '+39 76 4835030'),
+(5, 'Olga', 'Mennea', 'baccio39@poste.it', '$2b$14$OSAj03iJUX8xDZ/j9vBtee3vAeveT/N4L6lkBVCQ5F9GiGde/4MTm', '+39 76 7242388'),
+(6, 'Giuseppe', 'Renzi', 'giancarlo28@live.com', '$2b$14$OSAj03iJUX8xDZ/j9vBtee3vAeveT/N4L6lkBVCQ5F9GiGde/4MTm', '+39 012 26 91 6'),
+(7, 'Vincenzo', 'Gregorio', 'valierluisa@morpurgo-caracciolo.it', '$2b$14$OSAj03iJUX8xDZ/j9vBtee3vAeveT/N4L6lkBVCQ5F9GiGde/4MTm', '+39 70 4828148'),
+(8, 'Concetta', 'Filangieri', 'mariana28@abate.com', '$2b$14$OSAj03iJUX8xDZ/j9vBtee3vAeveT/N4L6lkBVCQ5F9GiGde/4MTm', '+39 43 03911718'),
+(9, 'Marisa', 'Cavanna', 'kvianello@tron-ramazzotti.it', '$2b$14$OSAj03iJUX8xDZ/j9vBtee3vAeveT/N4L6lkBVCQ5F9GiGde/4MTm', '+39 3465 787133'),
+(10, 'Alessandro', 'Visintini', 'adrianobondumier@biagiotti.eu', '$2b$14$OSAj03iJUX8xDZ/j9vBtee3vAeveT/N4L6lkBVCQ5F9GiGde/4MTm', '+39 834 73 82 9'),
+(11, 'Mercedes', 'Serraglio', 'cesarecagnin@gmail.com', '$2b$14$OSAj03iJUX8xDZ/j9vBtee3vAeveT/N4L6lkBVCQ5F9GiGde/4MTm', '+39 66 70106513'),
+(12, 'Fredo', 'Favata', 'piersantifalcone@fastwebnet.it', '$2b$14$OSAj03iJUX8xDZ/j9vBtee3vAeveT/N4L6lkBVCQ5F9GiGde/4MTm', '+39 317 8108013'),
+(13, 'Fabio', 'Pisano', 'zfuseli@libero.it', '$2b$14$OSAj03iJUX8xDZ/j9vBtee3vAeveT/N4L6lkBVCQ5F9GiGde/4MTm', '+39 60 6474687'),
+(14, 'Ermanno', 'Faugno', 'arturoveneziano@libero.it', '$2b$14$OSAj03iJUX8xDZ/j9vBtee3vAeveT/N4L6lkBVCQ5F9GiGde/4MTm', '+39 5009 788208'),
+(15, 'Serafina', 'Fantoni', 'gibiliscopatrizio@gozzi.it', '$2b$14$OSAj03iJUX8xDZ/j9vBtee3vAeveT/N4L6lkBVCQ5F9GiGde/4MTm', '+39 699 85 43 5'),
+(16, 'Donatello', 'Mantegazza', 'luisa10@outlook.com', '$2b$14$OSAj03iJUX8xDZ/j9vBtee3vAeveT/N4L6lkBVCQ5F9GiGde/4MTm', '+39 911 8384251'),
+(17, 'Napoleone', 'Lucarelli', 'tvento@trupiano-alfonsi.com', '$2b$14$OSAj03iJUX8xDZ/j9vBtee3vAeveT/N4L6lkBVCQ5F9GiGde/4MTm', '+39 41 1824493'),
+(18, 'Letizia', 'Mozart', 'toni74@cabibbo.org', '$2b$14$OSAj03iJUX8xDZ/j9vBtee3vAeveT/N4L6lkBVCQ5F9GiGde/4MTm', '+39 052 42 78 6'),
+(19, 'Benvenuto', 'Contarini', 'berenice82@ceravolo-bassi.eu', '$2b$14$OSAj03iJUX8xDZ/j9vBtee3vAeveT/N4L6lkBVCQ5F9GiGde/4MTm', '+39 0533 158692'),
+(20, 'Nicoletta', 'Eco', 'erraniloredana@poste.it', '$2b$14$OSAj03iJUX8xDZ/j9vBtee3vAeveT/N4L6lkBVCQ5F9GiGde/4MTm', '+39 6342 160733'),
+(21, 'Liberto', 'Gentilini', 'ferragnipasqual@ligorio-bonanno.eu', '$2b$14$OSAj03iJUX8xDZ/j9vBtee3vAeveT/N4L6lkBVCQ5F9GiGde/4MTm', '+39 8685 014294'),
+(22, 'Corrado', 'Rizzo', 'raffaello98@tim.it', '$2b$14$OSAj03iJUX8xDZ/j9vBtee3vAeveT/N4L6lkBVCQ5F9GiGde/4MTm', '+39 934 0608835'),
+(23, 'Puccio', 'Bonatti', 'francesca14@hotmail.com', '$2b$14$OSAj03iJUX8xDZ/j9vBtee3vAeveT/N4L6lkBVCQ5F9GiGde/4MTm', '+39 65 64823662'),
+(24, 'Dina', 'Manunta', 'marenzioivan@virgilio.it', '$2b$14$OSAj03iJUX8xDZ/j9vBtee3vAeveT/N4L6lkBVCQ5F9GiGde/4MTm', '+39 995 7773872'),
+(25, 'Flora', 'Brenna', 'carmelo34@tiscali.it', '$2b$14$OSAj03iJUX8xDZ/j9vBtee3vAeveT/N4L6lkBVCQ5F9GiGde/4MTm', '+39 3200 379176'),
+(26, 'Letizia', 'Pastine', 'jgori@libero.it', '$2b$14$OSAj03iJUX8xDZ/j9vBtee3vAeveT/N4L6lkBVCQ5F9GiGde/4MTm', '+39 1632 870831'),
+(27, 'Nina', 'Scarpa', 'btiepolo@hotmail.it', '$2b$14$OSAj03iJUX8xDZ/j9vBtee3vAeveT/N4L6lkBVCQ5F9GiGde/4MTm', '+39 277 4348734'),
+(28, 'Ranieri', 'Borzomì', 'guarinomorabito@poste.it', '$2b$14$OSAj03iJUX8xDZ/j9vBtee3vAeveT/N4L6lkBVCQ5F9GiGde/4MTm', '+39 122 3623166'),
+(29, 'Alessandra', 'Schiaparelli', 'foconiroberta@gmail.com', '$2b$14$OSAj03iJUX8xDZ/j9vBtee3vAeveT/N4L6lkBVCQ5F9GiGde/4MTm', '+39 909 6705466'),
+(30, 'Adele', 'Vergassola', 'rgalilei@spanevello-badoer.eu', '$2b$14$OSAj03iJUX8xDZ/j9vBtee3vAeveT/N4L6lkBVCQ5F9GiGde/4MTm', '+39 6272 980699'),
+(31, 'Bruno', 'Renzi', 'dfaggiani@parini-monaco.it', '$2b$14$OSAj03iJUX8xDZ/j9vBtee3vAeveT/N4L6lkBVCQ5F9GiGde/4MTm', '+39 56 46417080'),
+(32, 'Maurizio', 'Garzoni', 'bajamontigioffre@aporti.net', '$2b$14$OSAj03iJUX8xDZ/j9vBtee3vAeveT/N4L6lkBVCQ5F9GiGde/4MTm', '+39 71 9374529'),
+(33, 'Clelia', 'Carocci', 'corrado90@panicucci-petrucci.com', '$2b$14$OSAj03iJUX8xDZ/j9vBtee3vAeveT/N4L6lkBVCQ5F9GiGde/4MTm', '+39 314 9190586'),
+(34, 'Bartolomeo', 'Tognazzi', 'pugliesepriscilla@live.com', '$2b$14$OSAj03iJUX8xDZ/j9vBtee3vAeveT/N4L6lkBVCQ5F9GiGde/4MTm', '+39 657 26 28 4'),
+(35, 'Rosario', 'Roccabonella', 'serena31@fastwebnet.it', '$2b$14$OSAj03iJUX8xDZ/j9vBtee3vAeveT/N4L6lkBVCQ5F9GiGde/4MTm', '+39 379 9650752'),
+(36, 'Sergius', 'Franzese', 'massimiliano49@fastwebnet.it', '$2b$14$OSAj03iJUX8xDZ/j9vBtee3vAeveT/N4L6lkBVCQ5F9GiGde/4MTm', '+39 083 1367837'),
+(37, 'Ricciotti', 'Antonelli', 'gianfrancesco63@pacillo-sforza.it', '$2b$14$OSAj03iJUX8xDZ/j9vBtee3vAeveT/N4L6lkBVCQ5F9GiGde/4MTm', '+39 8557 444313'),
+(38, 'Dante', 'Valentino', 'giampierosorrentino@trezzini-longhena.net', '$2b$14$OSAj03iJUX8xDZ/j9vBtee3vAeveT/N4L6lkBVCQ5F9GiGde/4MTm', '+39 35 24082400'),
+(39, 'Angelica', 'Maggioli', 'acamilleri@lovato.eu', '$2b$14$OSAj03iJUX8xDZ/j9vBtee3vAeveT/N4L6lkBVCQ5F9GiGde/4MTm', '+39 04 7116719'),
+(40, 'Elisa', 'Bernetti', 'paolazanichelli@bresciani-grassi.it', '$2b$14$OSAj03iJUX8xDZ/j9vBtee3vAeveT/N4L6lkBVCQ5F9GiGde/4MTm', '+39 6999 386774'),
+(41, 'Liberto', 'Bignami', 'elenafranceschi@bova-crispi.com', '$2b$14$OSAj03iJUX8xDZ/j9vBtee3vAeveT/N4L6lkBVCQ5F9GiGde/4MTm', '+39 120 6797403'),
+(42, 'Isa', 'Longhena', 'giannottigiustino@yahoo.com', '$2b$14$OSAj03iJUX8xDZ/j9vBtee3vAeveT/N4L6lkBVCQ5F9GiGde/4MTm', '+39 3618 324210'),
+(43, 'Morena', 'Martucci', 'dcatenazzi@vodafone.it', '$2b$14$OSAj03iJUX8xDZ/j9vBtee3vAeveT/N4L6lkBVCQ5F9GiGde/4MTm', '+39 6488 771906'),
+(44, 'Claudia', 'Greggio', 'germanogianna@argan.it', '$2b$14$OSAj03iJUX8xDZ/j9vBtee3vAeveT/N4L6lkBVCQ5F9GiGde/4MTm', '+39 742 9671756'),
+(45, 'Ludovico', 'Campano', 'piergiorgio74@piccio.com', '$2b$14$OSAj03iJUX8xDZ/j9vBtee3vAeveT/N4L6lkBVCQ5F9GiGde/4MTm', '+39 45 16808760'),
+(46, 'Francesco', 'Travaglia', 'wroth@libero.it', '$2b$14$OSAj03iJUX8xDZ/j9vBtee3vAeveT/N4L6lkBVCQ5F9GiGde/4MTm', '+39 48 2477109'),
+(47, 'Nicoletta', 'Giradello', 'amanda08@caboto-gasperi.it', '$2b$14$OSAj03iJUX8xDZ/j9vBtee3vAeveT/N4L6lkBVCQ5F9GiGde/4MTm', '+39 274 84 67 7'),
+(48, 'Ennio', 'Passalacqua', 'stefanibonanno@pozzecco-morpurgo.com', '$2b$14$OSAj03iJUX8xDZ/j9vBtee3vAeveT/N4L6lkBVCQ5F9GiGde/4MTm', '+39 49 97278755'),
+(49, 'Amanda', 'Vento', 'mmilanesi@tiscali.it', '$2b$14$OSAj03iJUX8xDZ/j9vBtee3vAeveT/N4L6lkBVCQ5F9GiGde/4MTm', '+39 636 0576627'),
+(50, 'Dino', 'Tebaldi', 'rosselliniciro@hotmail.com', '$2b$14$OSAj03iJUX8xDZ/j9vBtee3vAeveT/N4L6lkBVCQ5F9GiGde/4MTm', '+39 026 2174596');
+
+-- --------------------------------------------------------
+
+--
+-- Struttura della tabella `zClienti`
+--
+
+CREATE TABLE `zClienti` (
+  `id_cliente` int(11) NOT NULL,
+  `nome` varchar(50) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
+
+--
+-- Dump dei dati per la tabella `zClienti`
+--
+
+INSERT INTO `zClienti` (`id_cliente`, `nome`) VALUES
+(1, 'ROSSI'),
+(2, 'VERDI'),
+(3, 'BIANCHI');
+
+-- --------------------------------------------------------
+
+--
+-- Struttura della tabella `zOrdini`
+--
+
+CREATE TABLE `zOrdini` (
+  `id_ordine` int(11) NOT NULL,
+  `id_cliente` int(11) DEFAULT NULL,
+  `importo` decimal(10,2) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
+
+--
+-- Dump dei dati per la tabella `zOrdini`
+--
+
+INSERT INTO `zOrdini` (`id_ordine`, `id_cliente`, `importo`) VALUES
+(1, 1, 10.00),
+(2, 1, 15.00),
+(3, 1, 17.00),
+(4, 2, 20.00),
+(5, 2, 25.00),
+(6, 3, 36.00);
 
 --
 -- Indici per le tabelle scaricate
@@ -459,6 +504,19 @@ ALTER TABLE `Utenti`
   ADD UNIQUE KEY `uni_email` (`email`);
 
 --
+-- Indici per le tabelle `zClienti`
+--
+ALTER TABLE `zClienti`
+  ADD PRIMARY KEY (`id_cliente`);
+
+--
+-- Indici per le tabelle `zOrdini`
+--
+ALTER TABLE `zOrdini`
+  ADD PRIMARY KEY (`id_ordine`),
+  ADD KEY `FK_ordini_clienti` (`id_cliente`);
+
+--
 -- AUTO_INCREMENT per le tabelle scaricate
 --
 
@@ -478,7 +536,7 @@ ALTER TABLE `Biblioteche`
 -- AUTO_INCREMENT per la tabella `Categorie`
 --
 ALTER TABLE `Categorie`
-  MODIFY `id_categoria` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id_categoria` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT per la tabella `Generi`
@@ -509,6 +567,18 @@ ALTER TABLE `Sanzioni`
 --
 ALTER TABLE `Utenti`
   MODIFY `id_utente` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=51;
+
+--
+-- AUTO_INCREMENT per la tabella `zClienti`
+--
+ALTER TABLE `zClienti`
+  MODIFY `id_cliente` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
+-- AUTO_INCREMENT per la tabella `zOrdini`
+--
+ALTER TABLE `zOrdini`
+  MODIFY `id_ordine` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- Limiti per le tabelle scaricate
@@ -542,6 +612,12 @@ ALTER TABLE `Prestiti`
 --
 ALTER TABLE `Sanzioni`
   ADD CONSTRAINT `Sanzioni_ibfk_1` FOREIGN KEY (`id_prestito`) REFERENCES `Prestiti` (`id_prestito`) ON UPDATE CASCADE;
+
+--
+-- Limiti per la tabella `zOrdini`
+--
+ALTER TABLE `zOrdini`
+  ADD CONSTRAINT `FK_ordini_clienti` FOREIGN KEY (`id_cliente`) REFERENCES `zClienti` (`id_cliente`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

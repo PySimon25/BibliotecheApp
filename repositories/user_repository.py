@@ -1,4 +1,5 @@
 from repositories.lending_repository import LendingRepository
+import bcrypt
 
 class UserRepository:
     def __init__(self, db):
@@ -36,4 +37,21 @@ class UserRepository:
             cursor.execute(query, (email,))
             user = cursor.fetchone()
             return user
+
+    def get_user_by_email_for_authentication(self, email):
+        '''
+        Questa query al database restituisce la password dell'utente!!!!
+        Utilizzare unicamente per effettuare l'autenticazione
+        '''
+        with self.db.cursor(dictionary=True) as cursor:
+            query = "SELECT id_utente, nome, cognome, email, password, telefono FROM Utenti WHERE email = %s"
+            cursor.execute(query, (email,))
+            user = cursor.fetchone()
+            return user
+
+    def check_password(self, plain_password, hashed_password):
+        try:
+            return bcrypt.checkpw(plain_password.encode(), hashed_password.encode())
+        except Exception:
+            return False
         
